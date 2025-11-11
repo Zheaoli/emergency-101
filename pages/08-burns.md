@@ -407,7 +407,6 @@ layout: default
     <span class="text-3xl">⚡</span>
     <span>电烧伤</span>
   </h3>
-
   <div class="space-y-3 text-sm">
     <div class="p-2 bg-red-100 rounded">
       <strong class="text-red-700">⚠️ 第一步：断电源！</strong>
@@ -417,7 +416,6 @@ layout: default
         <li>• <strong>不要</strong>直接接触触电者</li>
       </ul>
     </div>
-
     <div class="p-2 bg-white rounded">
       <strong>处理要点：</strong>
       <ul class="text-xs mt-1 space-y-1 ml-4">
@@ -427,7 +425,6 @@ layout: default
         <li>• <strong>必要时 CPR</strong></li>
       </ul>
     </div>
-
     <div class="p-2 bg-blue-100 rounded text-center">
       <strong class="text-blue-700">🚨 必须立即 120</strong>
       <p class="text-xs mt-1">即使表面烧伤轻微</p>
@@ -442,7 +439,6 @@ layout: default
     <span class="text-3xl">🧪</span>
     <span>化学烧伤</span>
   </h3>
-
   <div class="space-y-3 text-sm">
     <div class="p-2 bg-red-100 rounded">
       <strong class="text-red-700">⚠️ 立即处理</strong>
@@ -452,7 +448,6 @@ layout: default
         <li>• <strong>不要</strong>试图中和（会放热）</li>
       </ul>
     </div>
-
     <div class="p-2 bg-white rounded">
       <strong>特殊情况：</strong>
       <ul class="text-xs mt-1 space-y-1 ml-4">
@@ -461,7 +456,6 @@ layout: default
         <li>• <strong>眼部</strong>：侧头冲洗，<strong>从内向外</strong></li>
       </ul>
     </div>
-
     <div class="p-2 bg-blue-100 rounded text-center">
       <strong class="text-blue-700">🚨 立即 120</strong>
       <p class="text-xs mt-1">带上化学品标签/瓶子</p>
@@ -476,7 +470,6 @@ layout: default
     <span class="text-3xl">☀️</span>
     <span>日晒伤</span>
   </h3>
-
   <div class="space-y-3 text-sm">
     <div class="p-2 bg-white rounded">
       <strong>轻度晒伤：</strong>
@@ -487,7 +480,6 @@ layout: default
         <li>• 避免再次暴晒</li>
       </ul>
     </div>
-
     <div class="p-2 bg-yellow-100 rounded">
       <strong>严重晒伤（大水泡）：</strong>
       <ul class="text-xs mt-1 space-y-1 ml-4">
@@ -506,7 +498,6 @@ layout: default
     <span class="text-3xl">🔥</span>
     <span>着火时</span>
   </h3>
-
   <div class="space-y-3 text-sm">
     <div class="p-2 bg-red-100 rounded">
       <strong class="text-red-700">⚠️ 衣服着火</strong>
@@ -524,7 +515,6 @@ layout: default
         <li>• <strong>滚</strong>：来回翻滚灭火</li>
       </ul>
     </div>
-
     <div class="p-2 bg-white rounded">
       <strong class="text-xs">❌ 错误做法：</strong>
       <ul class="text-xs mt-1 space-y-1 ml-4">
