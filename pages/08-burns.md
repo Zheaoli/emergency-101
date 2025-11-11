@@ -10,7 +10,7 @@ class: text-center
 记住五字口诀，关键时刻不慌乱
 </div>
 
-<div class="mt-12 text-6xl font-bold" v-click>
+<div class="mt-8 md:mt-12 text-3xl md:text-4xl lg:text-6xl font-bold" v-click>
 <span v-mark.highlight.red>冲</span> -
 <span v-mark.highlight.orange>脱</span> -
 <span v-mark.highlight.yellow>泡</span> -
@@ -24,14 +24,14 @@ layout: default
 
 # 烧烫伤分级 📊
 
-<div class="grid grid-cols-3 gap-6 mt-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-4 md:mt-6">
 
 <div v-click>
 <div class="p-5 bg-yellow-50 rounded-lg border-2 border-yellow-300">
 
 <h3 class="text-center mb-3 text-yellow-700 font-bold text-lg">Ⅰ度烧伤（轻度）</h3>
 
-<div class="text-center text-5xl mb-3">😊</div>
+<div class="text-center text-2xl md:text-3xl lg:text-5xl mb-2 md:mb-3">😊</div>
 
 <div class="text-sm space-y-2">
 <div><strong>特征：</strong></div>
@@ -61,7 +61,7 @@ layout: default
 
 <h3 class="text-center mb-3 text-orange-700 font-bold text-lg">Ⅱ度烧伤（中度）</h3>
 
-<div class="text-center text-5xl mb-3">😰</div>
+<div class="text-center text-2xl md:text-3xl lg:text-5xl mb-2 md:mb-3">😰</div>
 
 <div class="text-sm space-y-2">
 <div><strong>特征：</strong></div>
@@ -94,7 +94,7 @@ layout: default
 
 <h3 class="text-center mb-3 text-red-700 font-bold text-lg">Ⅲ度烧伤（重度）</h3>
 
-<div class="text-center text-5xl mb-3">😱</div>
+<div class="text-center text-2xl md:text-3xl lg:text-5xl mb-2 md:mb-3">😱</div>
 
 <div class="text-sm space-y-2">
 <div><strong>特征：</strong></div>
@@ -140,7 +140,7 @@ layoutClass: gap-8
 
 <div class="p-4 bg-red-50 rounded-lg mb-3">
   <h3 class="font-bold text-red-700 text-lg mb-2 flex items-center gap-2">
-    <span class="text-3xl">💧</span>
+    <span class="text-xl md:text-2xl lg:text-3xl">💧</span>
     <span>冲 - 冷水冲洗</span>
   </h3>
   <div class="text-sm space-y-2">
@@ -156,7 +156,7 @@ layoutClass: gap-8
 
 <div class="p-4 bg-orange-50 rounded-lg mb-3">
   <h3 class="font-bold text-orange-700 text-lg mb-2 flex items-center gap-2">
-    <span class="text-3xl">👕</span>
+    <span class="text-xl md:text-2xl lg:text-3xl">👕</span>
     <span>脱 - 脱掉衣物</span>
   </h3>
   <div class="text-sm space-y-2">
@@ -172,7 +172,7 @@ layoutClass: gap-8
 
 <div class="p-4 bg-yellow-50 rounded-lg">
   <h3 class="font-bold text-yellow-700 text-lg mb-2 flex items-center gap-2">
-    <span class="text-3xl">🧊</span>
+    <span class="text-xl md:text-2xl lg:text-3xl">🧊</span>
     <span>泡 - 冷水浸泡</span>
   </h3>
   <div class="text-sm space-y-2">
@@ -191,7 +191,7 @@ layoutClass: gap-8
 
 <div class="p-4 bg-green-50 rounded-lg mb-3">
   <h3 class="font-bold text-green-700 text-lg mb-2 flex items-center gap-2">
-    <span class="text-3xl">🩹</span>
+    <span class="text-xl md:text-2xl lg:text-3xl">🩹</span>
     <span>盖 - 覆盖保护</span>
   </h3>
   <div class="text-sm space-y-2">
@@ -207,7 +207,7 @@ layoutClass: gap-8
 
 <div class="p-4 bg-blue-50 rounded-lg mb-3">
   <h3 class="font-bold text-blue-700 text-lg mb-2 flex items-center gap-2">
-    <span class="text-3xl">🚑</span>
+    <span class="text-xl md:text-2xl lg:text-3xl">🚑</span>
     <span>送 - 送医治疗</span>
   </h3>
   <div class="text-sm space-y-2">
@@ -256,12 +256,12 @@ layout: default
 <span v-mark.highlight.yellow>这些"民间偏方"千万别用！</span>
 </div>
 
-<div class="grid grid-cols-2 gap-6 mt-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-4 md:mt-6">
 
 <div v-click>
 <div class="p-5 bg-red-50 rounded-lg border-l-4 border-red-500">
   <div class="flex items-start gap-3 mb-4">
-    <span class="text-4xl">❌</span>
+    <span class="text-2xl md:text-3xl lg:text-4xl">❌</span>
     <div>
       <h3 class="font-bold text-red-700 text-lg">涂牙膏</h3>
       <p class="text-sm mt-2">为什么不行？</p>
@@ -282,7 +282,7 @@ layout: default
 <div v-click>
 <div class="p-5 bg-red-50 rounded-lg border-l-4 border-red-500">
   <div class="flex items-start gap-3 mb-4">
-    <span class="text-4xl">❌</span>
+    <span class="text-2xl md:text-3xl lg:text-4xl">❌</span>
     <div>
       <h3 class="font-bold text-red-700 text-lg">涂酱油/醋</h3>
       <p class="text-sm mt-2">为什么不行？</p>
@@ -303,7 +303,7 @@ layout: default
 <div v-click>
 <div class="p-5 bg-red-50 rounded-lg border-l-4 border-red-500">
   <div class="flex items-start gap-3 mb-4">
-    <span class="text-4xl">❌</span>
+    <span class="text-2xl md:text-3xl lg:text-4xl">❌</span>
     <div>
       <h3 class="font-bold text-red-700 text-lg">涂香油/菜油</h3>
       <p class="text-sm mt-2">为什么不行？</p>
@@ -324,7 +324,7 @@ layout: default
 <div v-click>
 <div class="p-5 bg-red-50 rounded-lg border-l-4 border-red-500">
   <div class="flex items-start gap-3 mb-4">
-    <span class="text-4xl">❌</span>
+    <span class="text-2xl md:text-3xl lg:text-4xl">❌</span>
     <div>
       <h3 class="font-bold text-red-700 text-lg">涂盐/糖</h3>
       <p class="text-sm mt-2">为什么不行？</p>
@@ -345,7 +345,7 @@ layout: default
 <div v-click>
 <div class="p-5 bg-red-50 rounded-lg border-l-4 border-red-500">
   <div class="flex items-start gap-3 mb-4">
-    <span class="text-4xl">❌</span>
+    <span class="text-2xl md:text-3xl lg:text-4xl">❌</span>
     <div>
       <h3 class="font-bold text-red-700 text-lg">冰块直接敷</h3>
       <p class="text-sm mt-2">为什么不行？</p>
@@ -366,7 +366,7 @@ layout: default
 <div v-click>
 <div class="p-5 bg-red-50 rounded-lg border-l-4 border-red-500">
   <div class="flex items-start gap-3 mb-4">
-    <span class="text-4xl">❌</span>
+    <span class="text-2xl md:text-3xl lg:text-4xl">❌</span>
     <div>
       <h3 class="font-bold text-red-700 text-lg">挑破水泡</h3>
       <p class="text-sm mt-2">为什么不行？</p>
@@ -399,14 +399,14 @@ layout: default
 
 # 特殊烧烫伤处理 ⚡🧪
 
-<div class="grid grid-cols-2 gap-6 mt-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-4 md:mt-6">
 
 <div v-click>
-<div class="p-5 bg-yellow-50 rounded-lg">
-  <h3 class="font-bold mb-3 text-yellow-700 text-lg flex items-center gap-2">
-    <span class="text-3xl">⚡</span>
-    <span>电烧伤</span>
-  </h3>
+  <div class="p-5 bg-yellow-50 rounded-lg">
+    <h3 class="font-bold mb-3 text-yellow-700 text-lg flex items-center gap-2">
+      <span class="text-xl md:text-2xl lg:text-3xl">⚡</span>
+      <span>电烧伤</span>
+    </h3>
 
   <div class="space-y-3 text-sm">
     <div class="p-2 bg-red-100 rounded">
@@ -417,7 +417,6 @@ layout: default
         <li>• <strong>不要</strong>直接接触触电者</li>
       </ul>
     </div>
-
     <div class="p-2 bg-white rounded">
       <strong>处理要点：</strong>
       <ul class="text-xs mt-1 space-y-1 ml-4">
@@ -427,7 +426,6 @@ layout: default
         <li>• <strong>必要时 CPR</strong></li>
       </ul>
     </div>
-
     <div class="p-2 bg-blue-100 rounded text-center">
       <strong class="text-blue-700">🚨 必须立即 120</strong>
       <p class="text-xs mt-1">即使表面烧伤轻微</p>
@@ -439,7 +437,7 @@ layout: default
 <div v-click>
 <div class="p-5 bg-purple-50 rounded-lg">
   <h3 class="font-bold mb-3 text-purple-700 text-lg flex items-center gap-2">
-    <span class="text-3xl">🧪</span>
+    <span class="text-xl md:text-2xl lg:text-3xl">🧪</span>
     <span>化学烧伤</span>
   </h3>
 
@@ -452,7 +450,6 @@ layout: default
         <li>• <strong>不要</strong>试图中和（会放热）</li>
       </ul>
     </div>
-
     <div class="p-2 bg-white rounded">
       <strong>特殊情况：</strong>
       <ul class="text-xs mt-1 space-y-1 ml-4">
@@ -461,7 +458,6 @@ layout: default
         <li>• <strong>眼部</strong>：侧头冲洗，<strong>从内向外</strong></li>
       </ul>
     </div>
-
     <div class="p-2 bg-blue-100 rounded text-center">
       <strong class="text-blue-700">🚨 立即 120</strong>
       <p class="text-xs mt-1">带上化学品标签/瓶子</p>
@@ -473,7 +469,7 @@ layout: default
 <div v-click>
 <div class="p-5 bg-green-50 rounded-lg">
   <h3 class="font-bold mb-3 text-green-700 text-lg flex items-center gap-2">
-    <span class="text-3xl">☀️</span>
+    <span class="text-xl md:text-2xl lg:text-3xl">☀️</span>
     <span>日晒伤</span>
   </h3>
 
@@ -503,7 +499,7 @@ layout: default
 <div v-click>
 <div class="p-5 bg-orange-50 rounded-lg">
   <h3 class="font-bold mb-3 text-orange-700 text-lg flex items-center gap-2">
-    <span class="text-3xl">🔥</span>
+    <span class="text-xl md:text-2xl lg:text-3xl">🔥</span>
     <span>着火时</span>
   </h3>
 
@@ -545,7 +541,7 @@ layout: default
 
 # 烧烫伤面积估算 📏
 
-<div class="grid grid-cols-2 gap-8 mt-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 mt-4 md:mt-6">
 
 <div v-click>
 <div class="p-5 bg-blue-50 rounded-lg">
@@ -562,7 +558,6 @@ layout: default
         患者的<span v-mark.highlight.blue>一个手掌</span>（包括五指）≈ 体表面积的 <strong>1%</strong>
       </p>
     </div>
-
     <div class="p-3 bg-green-100 rounded">
       <strong class="text-xs">如何使用：</strong>
       <ul class="text-xs mt-2 space-y-1 ml-4">
@@ -571,7 +566,6 @@ layout: default
         <li>• 几个手掌 ≈ 烧伤面积百分比</li>
       </ul>
     </div>
-
     <div class="p-3 bg-yellow-100 rounded text-center">
       <strong class="text-xs">💡 举例：</strong>
       <p class="text-xs mt-1">5 个手掌大小 = 约 5% 烧伤面积</p>
@@ -593,7 +587,6 @@ layout: default
       </ul>
       <p class="text-xs mt-2 text-center">→ 可自行处理或门诊</p>
     </div>
-
     <div class="p-3 bg-yellow-100 rounded">
       <strong class="text-yellow-700">⚠️ 中度烧伤</strong>
       <ul class="text-xs mt-2 space-y-1 ml-4">
@@ -602,7 +595,6 @@ layout: default
       </ul>
       <p class="text-xs mt-2 text-center">→ 需要住院治疗</p>
     </div>
-
     <div class="p-3 bg-red-100 rounded">
       <strong class="text-red-700">🚨 重度烧伤</strong>
       <ul class="text-xs mt-2 space-y-1 ml-4">
@@ -620,25 +612,25 @@ layout: default
 
 <div class="mt-6 p-5 bg-orange-50 rounded-lg" v-click>
   <h3 class="font-bold mb-3 text-orange-700 text-center">🎯 特殊部位烧伤必须就医</h3>
-  <div class="grid grid-cols-5 gap-3 text-xs text-center">
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 text-xs text-center">
     <div class="p-3 bg-white rounded">
-      <div class="text-3xl mb-1">👁️</div>
+      <div class="text-xl md:text-2xl lg:text-3xl mb-1">👁️</div>
       <strong>眼睛</strong>
     </div>
     <div class="p-3 bg-white rounded">
-      <div class="text-3xl mb-1">😷</div>
+      <div class="text-xl md:text-2xl lg:text-3xl mb-1">😷</div>
       <strong>面部</strong>
     </div>
     <div class="p-3 bg-white rounded">
-      <div class="text-3xl mb-1">🤚</div>
+      <div class="text-xl md:text-2xl lg:text-3xl mb-1">🤚</div>
       <strong>手部</strong>
     </div>
     <div class="p-3 bg-white rounded">
-      <div class="text-3xl mb-1">🦵</div>
+      <div class="text-xl md:text-2xl lg:text-3xl mb-1">🦵</div>
       <strong>关节</strong>
     </div>
     <div class="p-3 bg-white rounded">
-      <div class="text-3xl mb-1">🚽</div>
+      <div class="text-xl md:text-2xl lg:text-3xl mb-1">🚽</div>
       <strong>生殖器</strong>
     </div>
   </div>
@@ -697,7 +689,7 @@ class: text-center
 </div>
 
 <div class="flex items-center justify-center gap-6 text-lg">
-  <div class="text-5xl">💧</div>
+    <div class="text-2xl md:text-3xl lg:text-5xl">💧</div>
   <div class="text-left">
     <div class="font-bold text-2xl">冷水冲洗 <span v-mark.circle.red>15-30 分钟</span></div>
     <div class="text-sm text-gray-600 mt-1">这是最重要的一步！</div>
@@ -705,7 +697,7 @@ class: text-center
 </div>
 
 <div class="flex items-center justify-center gap-6 text-lg">
-  <div class="text-5xl">🚫</div>
+    <div class="text-2xl md:text-3xl lg:text-5xl">🚫</div>
   <div class="text-left">
     <div class="font-bold text-2xl"><span v-mark.circle.orange>什么都别涂</span></div>
     <div class="text-sm text-gray-600 mt-1">牙膏、酱油、香油统统不要！</div>
@@ -713,7 +705,7 @@ class: text-center
 </div>
 
 <div class="flex items-center justify-center gap-6 text-lg">
-  <div class="text-5xl">🏥</div>
+    <div class="text-2xl md:text-3xl lg:text-5xl">🏥</div>
   <div class="text-left">
     <div class="font-bold text-2xl">Ⅱ度及以上 → <span v-mark.circle.green>必须就医</span></div>
     <div class="text-sm text-gray-600 mt-1">有水泡就要去医院</div>
