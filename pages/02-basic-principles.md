@@ -49,7 +49,7 @@ layout: default
 </v-clicks>
 
 <div class="mt-4 p-3 bg-yellow-50 rounded text-sm" v-click>
-⚠️ <span v-mark.underline.red>英雄主义要不得，安全第一！</span>
+⚠️ <span v-mark.underline.red>别人转世可以去摇曳露营世界，而你只能转世成洞窟里的哥布林</span>
 </div>
 
 </div>
