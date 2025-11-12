@@ -18,6 +18,7 @@ class: text-center
   - 断肢处理
   - 海姆立克急救法
   - 烧伤/烫伤处理
+  - 蛇咬伤处理
 
 </v-clicks>
 

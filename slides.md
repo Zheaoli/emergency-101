@@ -99,6 +99,10 @@ src: ./pages/08-burns.md
 ---
 
 ---
+src: ./pages/09-snake-bite.md
+---
+
+---
 transition: fade-out
 layout: center
 class: text-center
