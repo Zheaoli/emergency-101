@@ -1,0 +1,374 @@
+/* 全局样式优化 - 响应式适配 */
+
+/* CSS 变量定义 - 根据视口大小调整 */
+:root {
+  --scale-factor: 1;
+  --base-font-size: 1rem;
+  --base-spacing: 1rem;
+  --base-padding: 1rem;
+}
+
+/* 极小屏幕 (< 1024px) - 平板及以下 */
+@media (max-width: 1023px) {
+  :root {
+    --scale-factor: 0.75;
+    --base-font-size: 0.75rem;
+    --base-spacing: 0.6rem;
+    --base-padding: 0.5rem;
+  }
+}
+
+/* 小屏幕 (1024px - 1279px) - 小笔记本 */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  :root {
+    --scale-factor: 0.85;
+    --base-font-size: 0.85rem;
+    --base-spacing: 0.75rem;
+    --base-padding: 0.65rem;
+  }
+}
+
+/* 中等屏幕 (1280px - 1600px) - 标准笔记本 */
+@media (min-width: 1280px) and (max-width: 1600px) {
+  :root {
+    --scale-factor: 0.95;
+    --base-font-size: 0.95rem;
+    --base-spacing: 0.9rem;
+    --base-padding: 0.85rem;
+  }
+}
+
+/* 大屏幕 (> 1600px) - 高分辨率显示器 */
+@media (min-width: 1601px) {
+  :root {
+    --scale-factor: 1;
+    --base-font-size: 1rem;
+    --base-spacing: 1rem;
+    --base-padding: 1rem;
+  }
+}
+
+/* 调整默认字体大小，让内容更紧凑 */
+.slidev-layout {
+  font-size: var(--base-font-size);
+  line-height: 1.35;
+}
+
+/* 标题 - 使用 calc 和 CSS 变量实现响应式 */
+.slidev-layout h1 {
+  font-size: calc(2rem * var(--scale-factor)) !important;
+  margin-bottom: calc(0.75rem * var(--scale-factor)) !important;
+  line-height: 1.2 !important;
+}
+
+.slidev-layout h2 {
+  font-size: calc(1.5rem * var(--scale-factor)) !important;
+  margin-bottom: calc(0.6rem * var(--scale-factor)) !important;
+  line-height: 1.3 !important;
+}
+
+.slidev-layout h3 {
+  font-size: calc(1.15rem * var(--scale-factor)) !important;
+  margin-bottom: calc(0.5rem * var(--scale-factor)) !important;
+  line-height: 1.3 !important;
+}
+
+/* 减小卡片内边距 - 响应式 */
+.slidev-layout .p-6 {
+  padding: calc(var(--base-padding) * 0.75) !important;
+}
+
+.slidev-layout .p-5 {
+  padding: calc(var(--base-padding) * 0.65) !important;
+}
+
+.slidev-layout .p-4 {
+  padding: calc(var(--base-padding) * 0.55) !important;
+}
+
+.slidev-layout .p-3 {
+  padding: calc(var(--base-padding) * 0.45) !important;
+}
+
+.slidev-layout .p-2 {
+  padding: calc(var(--base-padding) * 0.35) !important;
+}
+
+/* 减小间距 - 响应式 */
+.slidev-layout .gap-6 {
+  gap: calc(var(--base-spacing) * 0.75) !important;
+}
+
+.slidev-layout .gap-8 {
+  gap: calc(var(--base-spacing) * 1) !important;
+}
+
+.slidev-layout .gap-4 {
+  gap: calc(var(--base-spacing) * 0.6) !important;
+}
+
+.slidev-layout .gap-3 {
+  gap: calc(var(--base-spacing) * 0.5) !important;
+}
+
+.slidev-layout .gap-2 {
+  gap: calc(var(--base-spacing) * 0.35) !important;
+}
+
+.slidev-layout .space-y-3 > * + * {
+  margin-top: calc(var(--base-spacing) * 0.4) !important;
+}
+
+.slidev-layout .space-y-4 > * + * {
+  margin-top: calc(var(--base-spacing) * 0.6) !important;
+}
+
+.slidev-layout .space-y-2 > * + * {
+  margin-top: calc(var(--base-spacing) * 0.3) !important;
+}
+
+/* 减小 margin - 响应式 */
+.slidev-layout .mt-12,
+.slidev-layout .my-12 {
+  margin-top: calc(var(--base-spacing) * 1.2) !important;
+}
+
+.slidev-layout .mt-8,
+.slidev-layout .my-8 {
+  margin-top: calc(var(--base-spacing) * 1) !important;
+}
+
+.slidev-layout .mt-6,
+.slidev-layout .my-6 {
+  margin-top: calc(var(--base-spacing) * 0.75) !important;
+}
+
+.slidev-layout .mb-6,
+.slidev-layout .my-6 {
+  margin-bottom: calc(var(--base-spacing) * 0.75) !important;
+}
+
+.slidev-layout .mt-4,
+.slidev-layout .my-4 {
+  margin-top: calc(var(--base-spacing) * 0.6) !important;
+}
+
+.slidev-layout .mb-4,
+.slidev-layout .my-4 {
+  margin-bottom: calc(var(--base-spacing) * 0.6) !important;
+}
+
+.slidev-layout .mt-3,
+.slidev-layout .my-3 {
+  margin-top: calc(var(--base-spacing) * 0.5) !important;
+}
+
+.slidev-layout .mb-3,
+.slidev-layout .my-3 {
+  margin-bottom: calc(var(--base-spacing) * 0.5) !important;
+}
+
+.slidev-layout .mt-2,
+.slidev-layout .my-2 {
+  margin-top: calc(var(--base-spacing) * 0.35) !important;
+}
+
+.slidev-layout .mb-2,
+.slidev-layout .my-2 {
+  margin-bottom: calc(var(--base-spacing) * 0.35) !important;
+}
+
+/* 特别优化 grid 布局 - 响应式 */
+.slidev-layout .grid {
+  gap: calc(var(--base-spacing) * 0.65) !important;
+}
+
+/* 优化两列布局 - 响应式 */
+.slidev-layout.two-cols {
+  gap: calc(var(--base-spacing) * 1) !important;
+}
+
+.slidev-layout.two-cols .col-left,
+.slidev-layout.two-cols .col-right {
+  padding: 0 calc(var(--base-padding) * 0.5);
+}
+
+/* 缩小 emoji 和大字体大小 - 响应式 */
+.slidev-layout .text-8xl {
+  font-size: calc(3rem * var(--scale-factor)) !important;
+  line-height: 1 !important;
+}
+
+.slidev-layout .text-6xl {
+  font-size: calc(2.5rem * var(--scale-factor)) !important;
+  line-height: 1 !important;
+}
+
+.slidev-layout .text-5xl {
+  font-size: calc(2rem * var(--scale-factor)) !important;
+  line-height: 1.1 !important;
+}
+
+.slidev-layout .text-4xl {
+  font-size: calc(1.75rem * var(--scale-factor)) !important;
+  line-height: 1.1 !important;
+}
+
+.slidev-layout .text-3xl {
+  font-size: calc(1.4rem * var(--scale-factor)) !important;
+  line-height: 1.2 !important;
+}
+
+.slidev-layout .text-2xl {
+  font-size: calc(1.25rem * var(--scale-factor)) !important;
+  line-height: 1.3 !important;
+}
+
+.slidev-layout .text-xl {
+  font-size: calc(1.1rem * var(--scale-factor)) !important;
+  line-height: 1.3 !important;
+}
+
+.slidev-layout .text-lg {
+  font-size: calc(1rem * var(--scale-factor)) !important;
+  line-height: 1.35 !important;
+}
+
+/* 针对特定页面的缩放 - 使用 data 属性选择器 */
+/* 海姆立克和烧伤章节需要更紧凑 */
+.slidev-page[data-scale="0.85"] {
+  transform: scale(0.85);
+  transform-origin: top center;
+}
+
+.slidev-page[data-scale="0.9"] {
+  transform: scale(0.9);
+  transform-origin: top center;
+}
+
+/* 优化内容过多页面的滚动 */
+.slidev-layout.overflow-auto {
+  overflow-y: auto !important;
+  max-height: 100vh;
+  padding-right: 1rem;
+}
+
+/* 自定义滚动条样式 */
+.slidev-layout.overflow-auto::-webkit-scrollbar {
+  width: 6px;
+}
+
+.slidev-layout.overflow-auto::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+.slidev-layout.overflow-auto::-webkit-scrollbar-thumb {
+  background: rgba(255, 68, 68, 0.3);
+  border-radius: 3px;
+}
+
+.slidev-layout.overflow-auto::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 68, 68, 0.5);
+}
+
+/* 优化列表样式 - 响应式 */
+.slidev-layout ul,
+.slidev-layout ol {
+  margin-top: calc(var(--base-spacing) * 0.3) !important;
+  margin-bottom: calc(var(--base-spacing) * 0.3) !important;
+}
+
+.slidev-layout li {
+  margin-top: calc(var(--base-spacing) * 0.2) !important;
+  margin-bottom: calc(var(--base-spacing) * 0.2) !important;
+  line-height: 1.4 !important;
+}
+
+/* 优化圆角边框 */
+.slidev-layout .rounded-xl {
+  border-radius: 0.65rem !important;
+}
+
+.slidev-layout .rounded-lg {
+  border-radius: 0.5rem !important;
+}
+
+.slidev-layout .rounded {
+  border-radius: 0.35rem !important;
+}
+
+/* 优化边框宽度 */
+.slidev-layout .border-2 {
+  border-width: 1.5px !important;
+}
+
+.slidev-layout .border-4 {
+  border-width: 3px !important;
+}
+
+.slidev-layout .border-l-4 {
+  border-left-width: 3px !important;
+}
+
+/* 特殊：压缩 flex 布局间距 - 响应式 */
+.slidev-layout .flex.gap-2 {
+  gap: calc(var(--base-spacing) * 0.35) !important;
+}
+
+.slidev-layout .flex.gap-3 {
+  gap: calc(var(--base-spacing) * 0.45) !important;
+}
+
+/* 优化小尺寸文本 - 响应式 */
+.slidev-layout .text-xs {
+  font-size: calc(0.7rem * var(--scale-factor)) !important;
+  line-height: 1.3 !important;
+}
+
+.slidev-layout .text-sm {
+  font-size: calc(0.8rem * var(--scale-factor)) !important;
+  line-height: 1.35 !important;
+}
+
+.slidev-layout .text-base {
+  font-size: calc(0.9rem * var(--scale-factor)) !important;
+  line-height: 1.4 !important;
+}
+
+/* 减小特定元素的内边距 */
+.slidev-layout .items-center {
+  align-items: center !important;
+}
+
+.slidev-layout .items-start {
+  align-items: flex-start !important;
+}
+
+/* 优化背景色卡片的视觉密度 */
+.slidev-layout [class*="bg-red-"],
+.slidev-layout [class*="bg-green-"],
+.slidev-layout [class*="bg-blue-"],
+.slidev-layout [class*="bg-yellow-"],
+.slidev-layout [class*="bg-orange-"],
+.slidev-layout [class*="bg-purple-"] {
+  line-height: 1.35 !important;
+}
+
+/* 确保容器充分利用空间 */
+.slidev-layout > div {
+  max-width: 100%;
+}
+
+/* 优化网格列数在小屏幕上的显示 */
+.slidev-layout .grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.slidev-layout .grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.slidev-layout .grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
