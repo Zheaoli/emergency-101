@@ -27,6 +27,17 @@ transition: slide-left
 css: unocss
 # 演示时长
 duration: 25min
+# 画布尺寸配置 - 增大以适应更多内容
+canvasWidth: 1200
+aspectRatio: '16/9'
+# 自定义样式
+fonts:
+  sans: 'Roboto,Microsoft YaHei,PingFang SC,Noto Sans SC,sans-serif'
+  mono: 'Fira Code,Cascadia Code,monospace'
+---
+
+<style src="./styles/global.css"></style>
+
 ---
 
 # 急救 101 🚑

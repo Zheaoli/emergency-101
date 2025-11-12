@@ -552,7 +552,6 @@ layout: default
         患者的<span v-mark.highlight.blue>一个手掌</span>（包括五指）≈ 体表面积的 <strong>1%</strong>
       </p>
     </div>
-
     <div class="p-3 bg-green-100 rounded">
       <strong class="text-xs">如何使用：</strong>
       <ul class="text-xs mt-2 space-y-1 ml-4">
@@ -561,7 +560,6 @@ layout: default
         <li>• 几个手掌 ≈ 烧伤面积百分比</li>
       </ul>
     </div>
-
     <div class="p-3 bg-yellow-100 rounded text-center">
       <strong class="text-xs">💡 举例：</strong>
       <p class="text-xs mt-1">5 个手掌大小 = 约 5% 烧伤面积</p>
@@ -583,7 +581,6 @@ layout: default
       </ul>
       <p class="text-xs mt-2 text-center">→ 可自行处理或门诊</p>
     </div>
-
     <div class="p-3 bg-yellow-100 rounded">
       <strong class="text-yellow-700">⚠️ 中度烧伤</strong>
       <ul class="text-xs mt-2 space-y-1 ml-4">
@@ -592,7 +589,6 @@ layout: default
       </ul>
       <p class="text-xs mt-2 text-center">→ 需要住院治疗</p>
     </div>
-
     <div class="p-3 bg-red-100 rounded">
       <strong class="text-red-700">🚨 重度烧伤</strong>
       <ul class="text-xs mt-2 space-y-1 ml-4">
