@@ -27,8 +27,8 @@ transition: slide-left
 css: unocss
 # 演示时长
 duration: 25min
-# 画布尺寸配置 - 增大以适应更多内容
-canvasWidth: 1200
+# 画布尺寸配置 - 使用响应式尺寸
+canvasWidth: 980
 aspectRatio: '16/9'
 # 自定义样式
 fonts:
